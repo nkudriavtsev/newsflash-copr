@@ -20,6 +20,7 @@ BuildRequires:  openssl-devel
 BuildRequires:  desktop-file-utils
 BuildRequires:  gettext
 BuildRequires:  libappstream-glib
+BuildRequires:  sqlite3
 
 BuildRequires:  pkgconfig(clapper-0.0)
 BuildRequires:  pkgconfig(gstreamer-1.0)
