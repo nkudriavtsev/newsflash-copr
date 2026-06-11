@@ -1,7 +1,7 @@
 %undefine __brp_mangle_shebangs
 
 Name:           newsflash
-Version:        4.2.1
+Version:        5.1.0
 Release:        1%{?dist}
 Summary:        Follow your favorite blogs & news sites
 
@@ -67,33 +67,4 @@ appstream-util validate-relax --nonet %{buildroot}%{_metainfodir}/io.gitlab.news
 %{_metainfodir}/io.gitlab.news_flash.NewsFlash.appdata.xml
 
 %changelog
-* Tue Nov 18 2025 Umut Demir <mail@umutdemir.me> - 4.2.1-1
-- Update to 4.2.1
-
-* Thu Aug 28 2025 Umut Demir <mail@umutdemir.me> - 4.1.4-1
-- Update to 4.1.4
-
-* Mon Aug 4 2025 Umut Demir <mail@umutdemir.me> - 4.1.3-1
-- Update to 4.1.3
-
-* Wed Jul 30 2025 Umut Demir <mail@umutdemir.me> - 4.1.2-1
-- Update to 4.1.2
-
-* Sun Jul 6 2025 Umut Demir <mail@umutdemir.me> - 4.0.3-1
-- Update to 4.0.3
-
-* Fri Jun 20 2025 Umut Demir <mail@umutdemir.me> - 4.0.0~beta2-1
-- Update to 4.0.0~beta2
-
-* Fri May 9 2025 Umut Demir <mail@umutdemir.me> - 4.0.0~beta1-1
-- Update to 4.0.0~beta1
-
-* Sun Mar 23 2025 Umut Demir <mail@umutdemir.me> - 3.3.5-2
-- Add check
-- Disable brp mangle
-- Use vendored dependencies
-
-* Tue Sep 24 2024 Umut Demir <mail@umutdemir.me> - 3.3.5-1
-- Update to 3.3.5
-- Fix license
-
+%autochangelog
