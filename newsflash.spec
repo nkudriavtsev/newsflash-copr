@@ -8,8 +8,8 @@ Summary:        Follow your favorite blogs & news sites
 License:        GPL-3.0-only
 URL:            https://gitlab.com/news-flash/news_flash_gtk
 Source0:        %{url}/-/archive/v.%{version}/news_flash_gtk-v.%{version}.tar.gz
-Source1:        vendor.tar.gz
-Source2:        vendor-config.toml
+%dnl Source1:        vendor.tar.gz
+%dnl Source2:        vendor-config.toml
 
 BuildRequires:  blueprint-compiler
 BuildRequires:  cargo-rpm-macros >= 25
@@ -39,11 +39,11 @@ like.
 %prep
 %autosetup -n news_flash_gtk-v.%{version} -p1 -a1
 %cargo_prep -N
-if [ -f .cargo/config.toml ]; then
-  cat %{SOURCE2} >> .cargo/config.toml
-else
-  cat %{SOURCE2} >> .cargo/config
-fi
+%dnl if [ -f .cargo/config.toml ]; then
+%dnl   cat %{SOURCE2} >> .cargo/config.toml
+%dnl else
+%dnl   cat %{SOURCE2} >> .cargo/config
+%dnl fi
 
 %build
 %meson
