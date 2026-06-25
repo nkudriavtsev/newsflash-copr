@@ -37,7 +37,7 @@ handy keyboard shortcutsand having access to all your articles as long as you
 like.
 
 %prep
-%autosetup -n news_flash_gtk-v.%{version} -p1 -a1
+%autosetup -n news_flash_gtk-v.%{version} -p1
 %cargo_prep -N
 %dnl if [ -f .cargo/config.toml ]; then
 %dnl   cat %{SOURCE2} >> .cargo/config.toml
