@@ -1,7 +1,7 @@
 %undefine __brp_mangle_shebangs
 
 Name:           newsflash
-Version:        5.1.0
+Version:        5.2.3
 Release:        1%{?dist}
 Summary:        Follow your favorite blogs & news sites
 
